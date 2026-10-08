@@ -10,7 +10,7 @@ const selectedVendor = vendors.find((v) => v.id === selectedVendorId)
 
 const [cart, setCart] = useState([])
 function handleAddToCart(item) {
-setCart((prevCart) => [...prevCart, item])
+  setCart((prevCart) => [...prevCart, item])
 }
 return (
 <>

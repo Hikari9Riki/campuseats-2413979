@@ -1,4 +1,4 @@
-function MenuItemCard({ item, onAddsss }) {
+function MenuItemCard({ item, onAdd }) {
 return (
 <article className="card menu-card">
     <div className="thumb" aria-hidden="true">{item.name.charAt(0)}</div>
