@@ -97,6 +97,7 @@ button.card:hover { border-color: var(--green-light); }
 .form label { font-weight: 600; font-size: 0.9rem; margin-top: 0.5rem; }
 .form input, .form select { padding: 0.5rem; border: 1px solid #c5cbd3; border-radius: 8px; font: inherit; }
 .form .btn { margin-top: 1rem; }
+.view-link { background: none; border: 0; padding: 0.4rem 0 0; font: inherit; color: var(--green); cursor: pointer; text-align: left; }
 .field-error { color: #b3261e; font-size: 0.85rem; margin: 0; }
 .error { border-left: 4px solid #b3261e; }
 

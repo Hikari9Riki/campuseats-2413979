@@ -1,0 +1,55 @@
+[
+  {
+    "id": "2413979-taka-yo",
+    "name": "TakaYoooo",
+    "location": "Mahallah Uthman, Ground Floor",
+    "openHours": "12:00 pm - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2413979-m1", "name": "Karagee Hokage", "description": "Crispy fried chicken with special sauce", "price": 12.0, "category": "Chicken", "available": true, "popular": true },
+      { "id": "2413979-m2", "name": "TakaTakamen", "description": "Delicious noodles with special sauce", "price": 10.0, "category": "Noodles", "available": true, "popular": true },
+      { "id": "2413979-m3", "name": "Nasi Lemak Taka", "description": "Fragrant coconut rice with sambal, egg and anchovies", "price": 8.0, "category": "Rice", "available": true, "popular": true },
+      { "id": "2413979-m4", "name": "Ayam Goreng Berempah", "description": "Spiced fried chicken with sambal", "price": 9.5, "category": "Chicken", "available": true, "popular": false },
+      { "id": "2413979-m5", "name": "Mee Goreng Mamak", "description": "Wok-fried noodles with vegetables", "price": 9.0, "category": "Noodles", "available": true, "popular": false },
+      { "id": "2413979-m6", "name": "TakaDrink", "description": "Refreshing house drink", "price": 2.5, "category": "Drinks", "available": true, "popular": false },
+      { "id": "2413979-m7", "name": "Teh O Ais Limau", "description": "Iced tea with a squeeze of lime", "price": 2.0, "category": "Drinks", "available": true, "popular": false },
+      { "id": "2413979-m8", "name": "Roti Bom", "description": "Flaky sweet flatbread", "price": 3.5, "category": "Sides", "available": true, "popular": false },
+      { "id": "2413979-m9", "name": "Sagu Gula Melaka", "description": "Sago pudding with palm sugar", "price": 4.5, "category": "Dessert", "available": true, "popular": false }
+    ]
+  },
+  {
+    "id": "2415666-kafe-aminah",
+    "name": "Kafe Mahallah Aminah",
+    "location": "Mahallah Aminah, Ground Floor",
+    "openHours": "8:00 am - 9:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2415666-m1", "name": "Nasi Ayam Penyet", "description": "Smashed fried chicken with sambal and rice", "price": 9.0, "category": "Rice", "available": true, "popular": true },
+      { "id": "2415666-m2", "name": "Air Bandung", "description": "Rose syrup with milk", "price": 3.0, "category": "Drinks", "available": true, "popular": false }
+    ]
+  },
+  {
+    "id": "2410233-himar",
+    "name": "Himar Jannah",
+    "location": "Mahallah Bilal, Underground Floor",
+    "openHours": "5:00 am - 8:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2410233-m1", "name": "Himar wa Padi", "description": "Crispy donkey with rice", "price": 21.0, "category": "Rice", "available": true, "popular": false },
+      { "id": "2410233-m2", "name": "Himar Sate", "description": "Grilled donkey skewers", "price": 6.0, "category": "Meat", "available": true, "popular": false },
+      { "id": "2410233-m3", "name": "Himar Halib", "description": "Creamy donkey's milk", "price": 2.5, "category": "Drinks", "available": false, "popular": false }
+    ]
+  },
+  {
+    "id": "2416789-chinese-muslim",
+    "name": "Chinese Muslim Restaurant",
+    "location": "Mahallah Siddiq, First Floor",
+    "openHours": "10:00 am - 6:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2416789-m1", "name": "Ba Ku Teh Halal", "description": "A halal version of bak kut teh", "price": 12.0, "category": "Rice", "available": true, "popular": false },
+      { "id": "2416789-m2", "name": "Chicken Dumpling", "description": "Delicious 8 pcs chicken dumplings", "price": 8.0, "category": "Dumplings", "available": true, "popular": true },
+      { "id": "2416789-m3", "name": "Chinese Tea", "description": "A herbal tea from China", "price": 3.0, "category": "Drinks", "available": false, "popular": false }
+    ]
+  }
+]

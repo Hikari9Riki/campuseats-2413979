@@ -1,17 +1,37 @@
-# React + Vite
+# CampusEats
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cross-platform food-ordering app for BICS 3301 (IIUM). Built with React + Vite.
 
-Currently, two official plugins are available:
+## Running
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Vendor data is served as a mock API from `public/api/vendors.json`
+(opens at `http://localhost:5173/api/vendors.json`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Week 3 features
 
-## Expanding the ESLint configuration
+- Vendors and menus load from `/api/vendors.json` via `useEffect`, with loading,
+  error + "Try again", and an `AbortController` cleanup.
+- A real cart lifted to `App`: lines of `{ item, qty }` that merge on repeats,
+  `+`/`−`/remove controls, a badge showing total quantity, and a derived total.
+- View state (`'menu' | 'cart' | 'done'`) switches between the menu, cart and
+  "Order placed" screens (no router yet).
+- A controlled checkout form (name, mahallah, pickup time) with per-field
+  validation and `preventDefault`.
+- Personal feature (matric last digit 9): **Recently viewed menu items** — tracks
+  the last 5 items you viewed, newest first, no duplicates, with a Clear button.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# campuseats-2413979
+## Vendors
+
+Vendor 1 (TakaYoooo) is my own shop (matric `2413979`), with a full menu of 8+
+items across 3+ categories.
+
+Vendors 2–4 are from classmates:
+
+- Kafe Mahallah Aminah — from `2415666`
+- Himar Jannah — from `2410233`
+- Chinese Muslim Restaurant — from `2416789`
