@@ -19,14 +19,13 @@ function CheckoutForm({ onPlaceOrder }) {
   const [values, setValues] = useState({ name: '', mahallah: '', pickupTime: '' })
   const [errors, setErrors] = useState({})
 
-  // One handler for every input: the input's name matches a key in values.
   function handleChange(event) {
     const { name, value } = event.target
     setValues((prev) => ({ ...prev, [name]: value }))
   }
 
   function handleSubmit(event) {
-    event.preventDefault() // stop the page reloading
+    event.preventDefault()
     const found = validate(values)
     setErrors(found)
     if (Object.keys(found).length === 0) {
