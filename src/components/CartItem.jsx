@@ -1,11 +1,19 @@
 // One row in the cart. It shows data and reports clicks upward; it owns no state.
-function CartItem({ line, onChangeQty, onRemove }) {
-  const { item, qty } = line
+function CartItem({ line, onChangeQty, onRemove, onUpdateNote }) {
+  const { item, qty, note } = line
   return (
     <li className="cart-line">
       <div>
         <p className="cart-name">{item.name}</p>
         <p className="muted">RM {item.price.toFixed(2)} each</p>
+        {/* Special Instructions Input */}
+        <input 
+          type="text" 
+          placeholder="Special instructions (e.g., kurang manis)"
+          value={note || ''} 
+          onChange={(e) => onUpdateNote(item.id, e.target.value)}
+          style={{ width: '100%', padding: '4px', marginTop: '8px', fontSize: '0.85rem' }}
+        />
       </div>
       <div className="qty">
         <button type="button" onClick={() => onChangeQty(item.id, -1)}>−</button>

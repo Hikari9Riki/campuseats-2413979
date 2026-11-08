@@ -30,10 +30,18 @@ function OrdersPage() {
             {order.items && order.items.length > 0 && (
               <ul className="cart-list" style={{ marginTop: '0.5rem' }}>
                 {order.items.map((line) => (
-                  <li key={line.item.id} className="row" style={{ padding: '0.25rem 0' }}>
-                    <span>{line.qty}x {line.item.name}</span>
+                  <div key={line.item.id} className="row" style={{ alignItems: 'flex-start', marginBottom: '8px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                      <span>{line.qty}x {line.item.name}</span>
+                      {/* Add this line to show the note if it exists */}
+                      {line.note && (
+                        <span className="muted" style={{ fontSize: '0.85rem', marginTop: '2px' }}>
+                          Note: {line.note}
+                        </span>
+                      )}
+                    </div>
                     <span>RM {(line.item.price * line.qty).toFixed(2)}</span>
-                  </li>
+                  </div>
                 ))}
               </ul>
             )}

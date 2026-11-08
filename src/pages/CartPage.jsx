@@ -4,7 +4,7 @@ import CartItem from '../components/CartItem.jsx'
 import CheckoutForm from '../components/CheckoutForm.jsx'
 
 function CartPage() {
-  const { cart, total, changeQty, removeFromCart, placeOrder } = useCart()
+  const { cart, total, changeQty, removeFromCart, placeOrder, updateItemNote } = useCart()
   const navigate = useNavigate()
 
   function handlePlaceOrder(details) {
@@ -34,6 +34,7 @@ function CartPage() {
                 line={line}
                 onChangeQty={changeQty}
                 onRemove={removeFromCart}
+                onUpdateNote={updateItemNote}
               />
             ))}
           </ul>

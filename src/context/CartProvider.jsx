@@ -36,6 +36,14 @@ export function CartProvider({ children }) {
     setCart((prev) => prev.filter((line) => line.item.id !== itemId))
   }
 
+ const updateItemNote = (id, note) => {
+    setCart((prev) => 
+      prev.map((line) => 
+        line.item.id === id ? { ...line, note: note } : line
+      )
+    );
+  };
+
   function placeOrder(details) {
     const newOrder = {
       id: `ORD-${Date.now()}`,
@@ -67,7 +75,7 @@ export function CartProvider({ children }) {
   function clearRecentlyViewed() {
     setRecentlyViewed([])
   }
-
+  
   const value = {
     cart,
     orders,
@@ -76,6 +84,7 @@ export function CartProvider({ children }) {
     addToCart,
     changeQty,
     removeFromCart,
+    updateItemNote,
     placeOrder,
     recentlyViewed,
     recordView,
